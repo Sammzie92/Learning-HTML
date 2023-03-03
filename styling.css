@@ -1,34 +1,46 @@
 body {
     font-family: Calibri, Arial, sans-serif;
-    background-color: aliceblue;
+    background-color: lightblue;
 
+}
+tr:nth-child(even) {
+    background-color: aliceblue;
 }
 h1 {
     color: blueviolet;
     font-family: Arial Black, fangsong;
-    font-size: large;
+    font-size: 36px;
     text-align: center;
 }
 p {
-    color-adjust: inherit;
-    font-size: medium;
+    color-adjust: economy;
     line-height: normal;
     text-align: center;
+    text-decoration-color: burlywood;
+    font-family: ui-sans-serif;
+    font-size: 20px;
 }
 
-div{
-    text-align: center;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
 
 .Welcome-animation {
     display: inline-block;
+    text-align: center;
+
 }
-.Welcome-animation span{
+.Welcome-animation span {
     display: inline-block;
     animation-name: Welcome-animation;
     animation-duration: 25s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+
 .Welcome-animation span:nth-child(1) {
     animation-delay: 0.1s;
 }
@@ -53,9 +65,12 @@ div{
 }
 @keyframes Welcome-animation {
     from {
-        transform: translateY(0);
+        transform:translateY(0);
     }
     to {
-        transform: translateY(-10px);
+        transform:translateY(-25px);
     }
+}
+border {
+    background-color: chartreuse;
 }
